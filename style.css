@@ -1,0 +1,35 @@
+.galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+
+}
+
+.project {
+    background-color: coral;
+    height: 250px;
+}
+
+.header.photo {
+    background-image: url(./asets/header-square2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 600px;
+}
+
+.header.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 80px;
+
+}
+
+.header.card {
+    text-justify: center;
+    height: 500px;
+    width: 600px;
+    background-color: pink;
+    padding: 30px;
+}
