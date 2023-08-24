@@ -1,13 +1,26 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .galery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 575px));
     gap: 50px;
+    max-width: 1200px;
 
 }
 
 .project {
     background-color: coral;
-    height: 250px;
+    height: 300px;
 }
 
 .header.photo {
@@ -16,9 +29,10 @@
     background-size: cover;
     height: 600px;
     width: 600px;
+    position: relative;
 }
 
-.header.container {
+.header.container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,4 +46,64 @@
     width: 600px;
     background-color: pink;
     padding: 30px;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    bottom: 170px;
+    font-size: 5em;
+    color: white;
+}
+
+.header-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  
+}
+
+.header-icons img,
+.footer-icons img {
+    height: 50px;
+}
+
+.footer-icons {
+    padding-top: 40px;
+}
+
+.footer-panel {
+    background-color: aquamarine;
+    width: 400px;
+    padding: 30px;
+}
+
+
+.footer-panel>p{
+    padding: 10px 0;
+}
+
+.footer-panel>h1 {
+    padding-bottom: 40px;
+
+}
+.footer-container>img {
+    width: 800px;
+   
+}
+
+footer {
+  
+    align-self: stretch;
+    display: grid;
+}
+
+.footer-container {
+    display: flex;
+    align-items:center;
+    
+    padding: 60px 80px;
+    justify-self: center;
+    
+
 }
